@@ -12,7 +12,7 @@ function Signup() {
 
     try {
         const response = await axios.post(
-            "http://localhost:3002/signup",
+            "http://16.16.203.65:3002/signup",
             {
                 name,
                 email,
