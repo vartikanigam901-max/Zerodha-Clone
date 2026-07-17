@@ -8,36 +8,35 @@ function Signup() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const handleSubmit = async (e) => {
-    e.preventDefault();
+        e.preventDefault();
 
-    try {
-        const response = await axios.post(
-            "http://localhost:3002/signup",
-            {
-                name,
-                email,
-                password,
+        try {
+            const response = await axios.post(
+                "http://localhost:3002/signup",
+                {
+                    name,
+                    email,
+                    password,
+                }
+            );
+
+
+            window.location.href = "http://localhost:3001";
+
+        } catch (error) {
+
+            if (error.response?.data?.message === "Email already exists") {
+
+                alert("Email already exists.");
+
+            } else {
+
+                alert(error.response?.data?.message || "Something went wrong");
+
             }
-        );
 
-        
-        navigate("/login");
-
-    } catch (error) {
-
-    if (error.response.data.message === "Email already exists") {
-
-        alert("Email already exists. Redirecting to Login...");
-
-        window.location.href = "http://localhost:3001/login";
-
-    } else {
-
-        alert(error.response.data.message);
-
-    }
-}
-};
+        }
+    };
 
 
 
