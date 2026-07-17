@@ -21,7 +21,7 @@ function Login() {
             
 
             // Dashboard Open
-            window.location.href = "http://localhost:3000";
+            window.location.href = "http://16.16.203.65:3000";
 
         } catch (error) {
             alert(error.response?.data?.message || "Something went wrong");
