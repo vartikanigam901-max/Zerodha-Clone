@@ -1,6 +1,7 @@
 # Zerodha Clone
 
-Final Interview Explanation
+A full-stack Zerodha Clone built using the MERN Stack.
+
 
 The main objective of this project was to gain hands-on experience in full-stack web development using the MERN stack by building a stock market dashboard inspired by Zerodha.
 
@@ -17,4 +18,3 @@ I also integrated Chart.js to visualize stock holdings through interactive graph
 Throughout the development process, I used Git and GitHub for version control. I also explored deploying the application using AWS Amplify for the frontend and EC2 for the backend to understand the deployment workflow.
 
 Through this project, I gained practical experience in React.js, Node.js, Express.js, MongoDB Atlas, REST API development, authentication, frontend-backend integration, responsive UI design, data visualization, Git/GitHub, and cloud deployment concepts.
-```
