@@ -2,7 +2,7 @@
 
 A full-stack Zerodha Clone built using the MERN Stack.
 
-Overview -
+Overview-
 
 The Stock Market Dashboard is a full-stack MERN application inspired by Zerodha. It provides a responsive stock trading interface where users can register, log in securely, view their holdings and positions, place buy orders, and visualize stock data through interactive charts.
 
